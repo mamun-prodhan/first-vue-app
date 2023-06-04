@@ -2,11 +2,11 @@ const app = Vue.createApp({
     data(){
         return{
             showBooks: true,
-            books: 'The song of ice and fire',
-            author: 'Daniyel Difo',
-            age: 25,
-            x: 0,
-            y: 0,
+            books: [
+                {title: 'name fo the wind', author: 'patrick rothfuss', age: 32},
+                {title: 'the way of kings', author: 'brandon sanderson', age: 20},
+                {title: 'the way of kings', author: 'brandon sanderson', age: 59}
+            ]
         }
     },
     methods:{
