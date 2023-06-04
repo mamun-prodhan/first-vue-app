@@ -4,7 +4,9 @@ const app = Vue.createApp({
             showBooks: true,
             books: 'The song of ice and fire',
             author: 'Daniyel Difo',
-            age: 25
+            age: 25,
+            x: 0,
+            y: 0,
         }
     },
     methods:{
@@ -13,6 +15,16 @@ const app = Vue.createApp({
         },
         toggleShowBooks(){
             this.showBooks = !this.showBooks
+        },
+        handleEvent(e, data){
+            console.log(e, e.type)
+            if(data){
+                console.log(data)
+            }
+        },
+        handleMousemove(e){
+            this.x = e.offsetX
+            this.y = e.offsetY
         }
     }
 })
