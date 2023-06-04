@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,25 @@
     <title>learning vue.js 3</title>
     <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
 </head>
+
 <body>
     <h2>hello vue</h2>
 
-    <div  id="app">
-        <p>{{books}} - {{author}} - {{age}}</p>
-        <button v-on:click="age++">Increase Age</button>
-        <button v-on:click="age--">Decrease Age</button>
-        <div  @click="books = 'The title is changed'">Change Book Title</div><br>
-        <div @click = "changeBooks('Robinson Crusoe')">Change Book Name</div>
+    <div id="app">
+        <div v-if="showBooks">
+            <p>{{books}} - {{author}} - {{age}}</p>
+            <button v-on:click="age++">Increase Age</button>
+            <button v-on:click="age--">Decrease Age</button>
+            <div @click="books = 'The title is changed'">Change Book Title</div><br>
+            <div @click="changeBooks('Robinson Crusoe')">Change Book Name</div>
+        </div>
+        <br>
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <span v-if="!showBooks">Show Books</span>
+        </button>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
