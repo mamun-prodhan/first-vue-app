@@ -23,12 +23,14 @@
     <h2>hello vue</h2>
 
     <div id="app">
+        <!-- attribute binding -->
+        <a v-bind:href="url" target = "_blank">the best website ever</a>
         <div v-if="showBooks">
             <ul>
                 <li v-for="book in books">
                     <h3>{{book.title}}</h3>
                     <p>{{book.author}}</p>
-                    <p>{{book.age}}</p>
+                    <p>{{book.age,}}</p>
                 </li>
             </ul>
             <button v-on:click="age++">Increase Age</button>

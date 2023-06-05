@@ -2,6 +2,7 @@ const app = Vue.createApp({
     data(){
         return{
             showBooks: true,
+            url: 'https://netninja.dev/',
             books: [
                 {title: 'name fo the wind', author: 'patrick rothfuss', age: 32},
                 {title: 'the way of kings', author: 'brandon sanderson', age: 20},
