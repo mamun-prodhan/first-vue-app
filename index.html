@@ -31,6 +31,7 @@
                     <h3>{{book.title}}</h3>
                     <p>{{book.author}}</p>
                     <p>{{book.age,}}</p>
+                    <img :src="book.img" alt="book.title">
                 </li>
             </ul>
             <button v-on:click="age++">Increase Age</button>

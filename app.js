@@ -4,9 +4,9 @@ const app = Vue.createApp({
             showBooks: true,
             url: 'https://netninja.dev/',
             books: [
-                {title: 'name fo the wind', author: 'patrick rothfuss', age: 32},
-                {title: 'the way of kings', author: 'brandon sanderson', age: 20},
-                {title: 'the way of kings', author: 'brandon sanderson', age: 59}
+                {title: 'name fo the wind', author: 'patrick rothfuss', age: 32, img: 'assets/1.jpeg'},
+                {title: 'the way of kings', author: 'brandon sanderson', age: 20, img: 'assets/2.jpg'},
+                {title: 'the way of kings', author: 'brandon sanderson', age: 59, img: 'assets/3.jpeg'}
             ]
         }
     },
